@@ -1,0 +1,40 @@
+# Product
+package tht3;
+
+/**
+ *
+ * @author ADMIN
+ */
+public class Product {
+    private String description;
+    private String productID;
+    private Double price;
+    public Product(){
+    }
+    public Product(String description, String productID, double price){
+    this.productID=productID;
+    this.description=description;
+    this.price=price;
+    }
+    public String getDescription(){
+        return description;
+    }
+    public void setDescription(String description){
+        this.description=description;
+    }
+    public void setProductID(String productID){
+        this.productID=productID;
+    }
+    public double getPrice(){
+        return price;
+    }
+    public void setPrice(double price){
+        this.price=price;
+    }
+    public String toString(){
+            return String.format("[%s]%s:$%2f",productID, description, price);
+            
+        }
+    
+    
+    }
